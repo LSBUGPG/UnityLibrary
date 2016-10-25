@@ -11,22 +11,23 @@ public class KeyMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		 if(Input.GetButtonDown("HorizontalNegative"))
+			{
 
 			transform.Translate (Vector3.left * Time.deltaTime);
 		}
 
-		if (Input.GetKey (KeyCode.RightArrow)) {
+			if(Input.GetButtonDown("HorizontalPositive")) {
 
 			transform.Translate (Vector3.right * Time.deltaTime);
 		}
 
-		if (Input.GetKey (KeyCode.UpArrow)) {
+				if(Input.GetButtonDown("VerticalPositive")) {
 
 			transform.Translate (Vector3.forward * Time.deltaTime);
 		}
 
-		if (Input.GetKey (KeyCode.DownArrow)) {
+					if(Input.GetButtonDown("VerticalNegative")) {
 
 			transform.Translate (Vector3.back * Time.deltaTime);
 		}
