@@ -8,11 +8,16 @@ public class ChangeMesh : MonoBehaviour
 	List<Mesh> meshes;
 	int currentMesh = 0;
 
+	[SerializeField]
+	GameObject cilindro;
+
 	void Awake()
 	{
 		meshes = new List<Mesh>();
+		meshes.Add(GetComponent<MeshFilter> ().mesh);
 		meshes.Add(firstMesh);
 		meshes.Add(secondMesh);
+		meshes.Add (cilindro.GetComponent<MeshFilter> ().mesh);
 	}
 
 	void Update()
@@ -26,7 +31,8 @@ public class ChangeMesh : MonoBehaviour
 				currentMesh = 0;
 			}
 
-			gameObject.GetComponent<MeshFilter>().mesh = meshes[currentMesh];
+			GetComponent<MeshFilter>().mesh = meshes[currentMesh];
+
 		}
 	}
 }
