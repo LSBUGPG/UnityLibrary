@@ -23,22 +23,23 @@ public class TurnBasedCombat : MonoBehaviour {
     void Update()
     {
         Debug.Log(currentState);
-        switch (currentState) {
-            case (BattleStates.START);
+		switch (currentState) {
+		case BattleStates.START:
             //SETUP BATTLE FUNCTION
-            break;
-        Case (BattleStates.PLAYERCHOICE);
-        break;
-        Case (BattleStates.ENEMYCHOICE);
-        break;
-        Case (BattleStates.LOSE);
-        break;
-        Case (BattleStates.WIN);
-        break;
+			break;
+		case BattleStates.PLAYERCHOICE:
+			break;
+		case BattleStates.ENEMYCHOICE:
+			break;
+		case BattleStates.LOSE:
+			break;
+		case BattleStates.WIN:
+			break;
 
-    }
-}
-    voidOnGUI ()
+		}
+	}
+
+    void OnGUI()
     {
         if(GUILayout.Button("NEXT STATE"))
         {
@@ -60,7 +61,7 @@ public class TurnBasedCombat : MonoBehaviour {
             }
             else if (currentState == BattleStates.WIN)
             {
-                currentState = BattleStates.START)
+				currentState = BattleStates.START;
             }
         }
     }
