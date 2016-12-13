@@ -1,32 +1,46 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour 
-{
-	public Vector3 RespawnPosition = Vector3.zero;
+public class PlayerController : MonoBehaviour {
+
+	public string levelToLoad;
+	public float speed;
+	public Vector3 PlayerStart;
+	public GameObject Player;
+	private Rigidbody rb;
+	public int PickUpsCollect;
+	private bool PlayerWin = false;
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		float x = PlayerPrefs.GetFloat ("PosX", transform.position.x);
-		float y = PlayerPrefs.GetFloat ("PosY", transform.position.y);
-		float z = PlayerPrefs.GetFloat ("PosZ", transform.position.z);
+		rb = GetComponent<Rigidbody> ();
+		PlayerStart = Player.transform.position;
+	}
+	
+	// Update is called once per frame
+	void FixedUpdate ()
+	{
+		float moveHorizontal = Input.GetAxis ("Horizontal");
+		float moveVertical = Input.GetAxis ("Vertical");
 
-		//Get start position
-		RespawnPosition = new Vector3(x, y, z);
+		Vector3 movement = new Vector3 (moveHorizontal, 0f, moveVertical);
 
-		Respawn ();
+		rb.AddForce (movement * speed);
 	}
 
-	public void Respawn()
+	void OnTriggerEnter(Collider other)
 	{
-		transform.position = RespawnPosition;
-	}
+		if (other.gameObject.CompareTag ("Pick Up")) {
+			other.gameObject.SetActive (false);
+			PickUpsCollect += 1;
+		}
 
-	void Update()
-	{
-		if (Input.GetKeyDown (KeyCode.Space)) 
-			Respawn ();
-		
+		if (PickUpsCollect >= 7)
+			PlayerWin = true;
+
+		if(PlayerWin == true)
+			SceneManager.LoadScene(levelToLoad);
 	}
 }
