@@ -8,7 +8,7 @@ public class Door : MonoBehaviour {
 	public GameObject hinge;
 	private Animator hingeAnim;
 	public GameObject button;
-	public MovingPlatform Platform;
+	//public MovingPlatform Platform;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +26,7 @@ public class Door : MonoBehaviour {
 			{
 				hingeAnim.SetTrigger ("DoorOpen");
 				doorIsOpening = true;
-				Platform.PlatformMove ();
+				//Platform.PlatformMove ();
 			}
 		}
 	}

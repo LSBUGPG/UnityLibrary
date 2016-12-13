@@ -14,13 +14,13 @@ public class CameraSwitch : MonoBehaviour {
 	public GameObject pa;
 	public GameObject character;
 
-	private FightManager fightManager;
+	//private FightManager fightManager;
 
 
 	// Use this for initialization
 	void Start () {
 
-		fightManager = FindObjectOfType<FightManager> ();
+	//	fightManager = FindObjectOfType<FightManager> ();
 
 		mainCamera.enabled = true;
 		battleCamera.enabled = false;
@@ -43,7 +43,7 @@ public class CameraSwitch : MonoBehaviour {
 			mainCamera.enabled = !mainCamera.enabled;
 			battleCamera.enabled = !battleCamera.enabled;
 			battleMenu.SetActive (true);
-			fightManager.enemy = gameObject;
+//			fightManager.enemy = gameObject;
 			Restart ();
 		}
 	}

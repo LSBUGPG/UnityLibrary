@@ -15,4 +15,10 @@ public class Bullet : MonoBehaviour
 	{
 		rb.velocity = transform.right * speed;
 	}
+
+	void OnCollisionEnter(Collision Col){
+
+		Debug.Log ("ive hit somthing");
+		Destroy (gameObject);
+	}
 }
