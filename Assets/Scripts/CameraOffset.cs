@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour {
+public class CameraOffset : MonoBehaviour {
 
 	public GameObject player;
 
