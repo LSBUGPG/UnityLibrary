@@ -651,6 +651,7 @@ MonoBehaviour:
   title: {fileID: 216201081}
   dialogueText: {fileID: 1180445095}
   asset: {fileID: 4900000, guid: 607e9c27495ede94d9c875ada44dbaea, type: 3}
+  line: []
 --- !u!4 &2070480238
 Transform:
   m_ObjectHideFlags: 0
