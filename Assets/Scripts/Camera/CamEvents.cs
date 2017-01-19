@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class NewBehaviour : MonoBehaviour {
+public class CamEvents : MonoBehaviour {
 
 
 	public Camera[] cams;
