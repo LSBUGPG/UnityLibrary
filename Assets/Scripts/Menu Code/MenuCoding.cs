@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 //Scene.buildIndex
 
 public class MenuCoding : MonoBehaviour {
-	Scene CurrentScene = SceneManager.GetActiveScene(); // Gets the current scene for the game.
+    Scene CurrentScene;
 	// Use this for initialization
 	void Start () {
 		CurrentScene = SceneManager.GetActiveScene(); // On game start, grabs the current scene (in case another script changes it before this one loads).
