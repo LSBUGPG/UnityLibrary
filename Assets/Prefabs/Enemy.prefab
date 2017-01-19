@@ -103,9 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d0a6e3eef4ada448370de65f6fd1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allPaths:
-  - {fileID: 0, guid: a64b175c98f2dca48a5776960885e86e, type: 2}
-  - {fileID: 1000010463245410, guid: 167afd3db5096e64db05b182d145f56a, type: 2}
 --- !u!114 &114000013578386682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,8 +114,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae3e873d3c1b5c4d8a91cea433579bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathToFollow: {fileID: 0, guid: a64b175c98f2dca48a5776960885e86e, type: 2}
-  CurrentWayPointID: 0
-  speed: 20
-  rotationSpeed: 5
-  pathName: 
