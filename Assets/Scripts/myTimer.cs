@@ -16,7 +16,14 @@ public class myTimer : MonoBehaviour {
 		timeRemaining -= Time.deltaTime; 
 		timer.text = "Time Remaining: " + Mathf.RoundToInt(timeRemaining);
 
-	
+	}
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag("Capsule"))
+		{
+			other.gameObject.SetActive (false);
+			timeRemaining += 5.0f;
+		}
 
 	}
 
