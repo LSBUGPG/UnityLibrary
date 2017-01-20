@@ -117,8 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 398d16f337cf17d42a22dfb5fbeccd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationKey: 32
-  timeDiff: 0.5
 --- !u!4 &403360033
 Transform:
   m_ObjectHideFlags: 0
@@ -310,8 +308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e29183713445a84bba2f067070a2093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HorizontalSpeed: 2
-  VerticalSpeed: 2
 --- !u!1 &1727425276
 GameObject:
   m_ObjectHideFlags: 0
