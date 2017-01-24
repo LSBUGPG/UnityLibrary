@@ -4,14 +4,14 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  productGUID: 4b0355020985a964fb7c3a22cd36b48e
+  productGUID: 1c218cc41c1ec0b4785c3969cbe9d5ab
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: UnityLibrary
+  productName: MoveBlock
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
@@ -345,14 +345,14 @@ PlayerSettings:
     17: MOBILE_INPUT
     20: MOBILE_INPUT
     22: MOBILE_INPUT
-  metroPackageName: UnityLibrary
+  metroPackageName: MoveBlock
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: UnityLibrary
+  metroApplicationDescription: MoveBlock
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
